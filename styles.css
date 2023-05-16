@@ -1,3 +1,12 @@
+.primary_colr {
+  background-color: #510B76;
+  color: white;
+}
+
+.margin_lft {
+  margin-left: 12rem;
+}
+
 @font-face {
   font-family: Cairo_regular;
   src: url(Cairo-VariableFont_slnt\,wght.ttf);

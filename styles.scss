@@ -2,7 +2,14 @@
 $primary-color:#510B76;
 $alternative-color: #0B760F;
 
+.primary_colr{
+    background-color: $primary-color;
+    color:white
+}
 
+.margin_lft{
+    margin-left: 12rem;
+}
 
 @font-face {
     font-family: Cairo_regular;

@@ -297,7 +297,7 @@ for(var i=0;i<col_mids.length;i++){
     card_text.textContent=`${inner_data[i].card_whatever.substring(0,98)}`+'...'
     var read_more_button=document.createElement('button')
     read_more_button.textContent="اقراء المزيد"
-    read_more_button.className='btn btn-primary mt-2'
+    read_more_button.className='btn primary_colr margin_lft mt-5  '
     card_text.append(read_more_button);
     card_body.append(card_text)
     
@@ -314,7 +314,7 @@ for(var i=0;i<col_mids.length;i++){
   col_mids[i].append(card)
 }
 
-var many_read_more=document.getElementsByClassName('btn btn-primary mt-2')
+var many_read_more=document.getElementsByClassName('btn primary_colr margin_lft mt-2')
 
   var modal=document.createElement('div')
   modal.className="modal"
@@ -322,7 +322,7 @@ var many_read_more=document.getElementsByClassName('btn btn-primary mt-2')
   modal_content.className="modal-content"
   var modal_header=document.createElement('div')
   var modal_footer=document.createElement('div')
-  modal_footer.className='d-flex justify-content-end'
+  modal_footer.className='d-flex justify-content-end mt-2'
   var modal_return=document.createElement('button')
   modal_return.className='btn btn-secondary'
   modal_return.textContent="Close"
@@ -332,7 +332,7 @@ var many_read_more=document.getElementsByClassName('btn btn-primary mt-2')
   var x_sign=document.createElement('span')
   x_sign.textContent="x";
   var close_button=document.createElement('button')
-  close_button.className="btn btn-primary close"
+  close_button.className="btn bg-light close"
   close_button.append(x_sign)
   var paragraph=document.createElement('p')
   modal_header.append(modal_title)
@@ -349,7 +349,7 @@ var many_read_more=document.getElementsByClassName('btn btn-primary mt-2')
 
   var array=[];
 
-  document.querySelectorAll(".btn.btn-primary.mt-2").forEach(function(butn){
+  document.querySelectorAll(".btn.primary_colr.margin_lft.mt-5").forEach(function(butn){
     butn.onclick=function(){
       modal.style.display="block"
       var i=butn.closest(".col-md-4").dataset.id
